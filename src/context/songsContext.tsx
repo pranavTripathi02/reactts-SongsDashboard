@@ -17,9 +17,12 @@ const SongsContext = createContext<any>(null);
 
 const SongsProvider = ({ children }: Props) => {
   const [songs, setSongs] = useState<SongType[]>([]);
+  const [playingSong, setPlayingSong] = useState<SongType | null>(null);
 
   return (
-    <SongsContext.Provider value={{ songs, setSongs }}>
+    <SongsContext.Provider
+      value={{ songs, setSongs, playingSong, setPlayingSong }}
+    >
       {children}
     </SongsContext.Provider>
   );

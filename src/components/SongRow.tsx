@@ -15,12 +15,12 @@ function SongRow({
   let image;
   if (song_thumbnail) image = URL.createObjectURL(song_thumbnail);
   return (
-    <div className="grid grid-cols-6 justify-items-center text-center items-center py-4 border-b px-1 overflow-hidden">
+    <div className="grid grid-cols-6  text-center items-center py-4 border-b px-1 overflow-hidden">
       <span className="col-start-1 col-end-2 flex items-center gap-3 mx-4">
         <img
           src={image}
           alt=" song_thumbnail"
-          className="max-h-[6rem] max-w-[6rem] border"
+          className="max-h-[6rem] h-[6rem] max-w-[6rem] min-w-[6rem] overflow-hidden border"
         />
         {song_name}
       </span>
@@ -45,8 +45,8 @@ function SongRow({
         <button onClick={() => deleteSong(song)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="1rem"
+            height="1rem"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

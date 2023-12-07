@@ -24,7 +24,7 @@ function AddSongModal({
     if (songInfo.song_name.length < 1 || songInfo.song_link.length < 1) return;
     const date = new Date();
     const addedOn =
-      date.getDate().toString() +
+      date.getDate().toString().padStart(2, "0") +
       "/" +
       (date.getMonth() + 1).toString() +
       "/" +

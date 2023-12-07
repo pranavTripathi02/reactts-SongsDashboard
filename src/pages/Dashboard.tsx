@@ -6,11 +6,12 @@ import { SongType } from "../context/songsContext";
 // import useAuth from "../hooks/useAuth";
 import useSongs from "../hooks/useSongs";
 import AddSongModal from "../components/AddSongModal";
+import Player from "../components/Player";
 
 function Dashboard() {
   // const { auth } = useAuth();
 
-  const { songs, setSongs } = useSongs();
+  const { songs, setSongs, playingSong, setPlayingSong } = useSongs();
   const [isAddSongModalOpen, setIsAddSongModalOpen] = useState(false);
 
   const addNewSong = (song: SongType) => {
@@ -22,7 +23,7 @@ function Dashboard() {
     setSongs(songs.filter((item: SongType) => item.song_id !== song.song_id));
   };
   const playSong = (song: SongType) => {
-    console.log(song, "playing...");
+    setPlayingSong(song);
   };
 
   return (
@@ -44,7 +45,7 @@ function Dashboard() {
               onSubmit={addNewSong}
             />
           )}
-          <div className="px-6">
+          <div className="px-6 relative h-full">
             <div className="grid grid-cols-6 justify-between text-center uppercase py-4 border-b font-medium">
               <span className="col-start-1 col-end-2">Song Name</span>
               <span className="col-start-3">Source</span>
@@ -62,6 +63,7 @@ function Dashboard() {
                 />
               ))}
             </div>
+            <Player song={playingSong} />
           </div>
         </div>
       </div>
