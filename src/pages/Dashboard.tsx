@@ -22,7 +22,7 @@ function Dashboard() {
     setSongs(songs.filter((item: SongType) => item.song_id !== song.song_id));
   };
   const playSong = (song: SongType) => {
-    console.log("playing...");
+    console.log(song, "playing...");
   };
 
   return (
