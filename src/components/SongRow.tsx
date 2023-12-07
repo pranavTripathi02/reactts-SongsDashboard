@@ -3,6 +3,7 @@ import { SongType } from "../context/songsContext";
 function SongRow({ song }: { song: SongType }) {
   const { song_name, song_link, song_addedOn, song_source, song_thumbnail } =
     song;
+  console.log(song_link);
   let image;
   if (song_thumbnail) image = URL.createObjectURL(song_thumbnail);
   return (
