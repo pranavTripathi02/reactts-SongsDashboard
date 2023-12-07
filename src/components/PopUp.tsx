@@ -11,7 +11,7 @@ function PopUp({
 }) {
   const [showMessage, setShowMessage] = useState(true);
 
-  console.log(text);
+  // console.log(text);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {

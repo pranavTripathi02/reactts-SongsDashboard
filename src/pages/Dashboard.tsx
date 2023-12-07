@@ -18,8 +18,8 @@ function Dashboard() {
     setSongs([...songs, song]);
   };
   const deleteSong = (song: SongType) => {
-    console.log("deleting...");
-    console.log(song);
+    // console.log("deleting...");
+    // console.log(song);
     setSongs(songs.filter((item: SongType) => item.song_id !== song.song_id));
   };
   const playSong = (song: SongType) => {

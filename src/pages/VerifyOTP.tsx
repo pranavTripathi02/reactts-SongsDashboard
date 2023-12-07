@@ -76,12 +76,12 @@ function VerifyOTP() {
         setAuth(data);
 
         /* using localstorage to persist session for 2 minutes
-                                                        since unable to set cookies through back-end */
+                                                                since unable to set cookies through back-end */
         localStorage.setItem("token", data?.token);
         localStorage.setItem("tokenCreated", Date.now().toString());
         navigate("/");
       } catch (err) {
-        console.log(err);
+        console.error(err);
         showPopupTimeout();
         setOtp("");
       }
