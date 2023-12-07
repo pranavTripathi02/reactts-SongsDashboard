@@ -1,0 +1,81 @@
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDE4OTQ3MzMsInVzZXJJZCI6IjYzYmQwMTI2MDI5NDQ3MzY5MGY0YmVlZiIsInNlc3Npb25JZCI6IjY1NzBkYTRkN2MxM2E2OTU2NjM1OWFmMCIsInVzZXJuYW1lIjoiKzkxOTAwMDAwMDAwMCJ9.8bK4CIDFcdS6pilg4nG7TK0tJGv4eI_vflBabxahVAc",
+    "getstream": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoidXNlcl82M2JkMDEyNjAyOTQ0NzM2OTBmNGJlZWYifQ.6dOZLGWX7aqdTKxK9LjBOqV3QoYuWSOkJNI9GgLTDxE",
+        "user": "user_63bd01260294473690f4beef"
+    },
+    "getstreamChat": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoidXNlcl82M2JkMDEyNjAyOTQ0NzM2OTBmNGJlZWYifQ.6dOZLGWX7aqdTKxK9LjBOqV3QoYuWSOkJNI9GgLTDxE",
+        "user": "user_63bd01260294473690f4beef"
+    },
+    "user": {
+        "_id": "63bd01260294473690f4beef",
+        "firstName": null,
+        "lastName": null,
+        "dob": null,
+        "gender": 4,
+        "gHandle": null,
+        "profilePicture": null,
+        "verified": true,
+        "contentLanguages": [],
+        "likedGenres": [],
+        "subscription": {
+            "subscriptionPlan": {
+                "_id": "64dd42d12509056ba91b2800",
+                "name": "G Starter",
+                "isEnabled": true,
+                "isFree": true,
+                "config": {
+                    "advertisement": {
+                        "content": true,
+                        "interaction": true
+                    },
+                    "content": {
+                        "singles": true,
+                        "poetry": true,
+                        "streamable": true,
+                        "podcasts": false
+                    },
+                    "discounts": {
+                        "dedication": 0,
+                        "concert": 0
+                    },
+                    "interaction": {
+                        "chat": true,
+                        "livestream": true,
+                        "post": true
+                    }
+                }
+            },
+            "status": 1,
+            "paymentType": 1
+        },
+        "gdpZone": {
+            "_id": "6452357b19b8af0a1f6b48a1",
+            "name": "India",
+            "currency": "INR",
+            "symbol": "\u20b9",
+            "ratio": 1.0,
+            "conversionRate": 1.0,
+            "paymentGateway": {
+                "label": "Razorpay",
+                "value": 1
+            },
+            "countries": [
+                {
+                    "_id": "621f020e7943adcf84141920",
+                    "name": "India",
+                    "alpha2": "IN"
+                }
+            ],
+            "charges": [
+                {
+                    "name": "GST",
+                    "percentage": 18,
+                    "isInclusive": false
+                }
+            ],
+            "createdAt": "2023-05-03T10:20:33.632000"
+        }
+    }
+}

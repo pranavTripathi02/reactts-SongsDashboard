@@ -1,0 +1,21 @@
+.PhoneInputInput {
+  padding: 1rem;
+  outline: none;
+}
+.PhoneInputInput:disabled {
+  cursor: not-allowed;
+  /* background: #e2e2e2; */
+  opacity: 0.5;
+}
+
+.PhoneInputInput:focus {
+  outline: none;
+}
+.PhoneInput {
+  outlne: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #d0d3d4;
+}
